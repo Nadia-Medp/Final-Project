@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Impressionism</title>
+	<link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+	<div id="now-playing">
+    Now Playing: <span>Claude Debussy – Clair de Lune</span>
+  </div>
+    <div id="wrapper">
+        <header>
+            <h1>Gallery of Impressionism</h1>
+        </header>
+        <main>
+            <h2>The Essence of Impressionism: Light, Color, and Brushwork</h2>
+            <p>Impressionist paintings were characterized by loose brushwork, vivid colors, and an emphasis on light. Explore the gallery to appreciate the beauty of Impressionism. Hover over each artwork to see its colors brighten, revealing the play of light and color that defines this remarkable style.</p>
+
+            <div class="gallery">
+                <div>
+                    <img class="fade-in" src="images/cassattsewing.jpg" alt="Young Mother Sewing">
+                    <p class="caption">Young Mother Sewing - Mary Cassatt</p>
+                </div>
+                <div>
+                    <img class="fade-in" src="images/degasdancingclass.jpg" alt="The Dance Class">
+                    <p class="caption">The Dance Class - Edgar Degas</p>
+                </div>
+                <div>
+                    <img class="fade-in" src="images/monetsunrise.jpg" alt="Impression, Sunrise">
+                    <p class="caption">Impression, Sunrise - Claude Monet</p>
+                </div>
+                <div>
+                    <img class="fade-in" src="images/monetwaterlilies.jpg" alt="Water Lilies">
+                    <p class="caption">Water Lilies - Claude Monet</p>
+                </div>
+                <div>
+                    <img class="fade-in" src="images/pissarronight.webp" alt="The Boulevard Montmartre at Night">
+                    <p class="caption">The Boulevard Montmartre at Night - Camille Pissarro</p>
+                </div>
+                <div>
+                    <img class="fade-in" src="images/renoirparty.jpg" alt="Dance at Le Moulin de la Galette">
+                    <p class="caption">Dance at Le Moulin de la Galette - Pierre-Auguste Renoir</p>
+                </div>
+                <div>
+                    <img class="fade-in" src="images/sisleyflood.jpg" alt="Flood at Port-Marly">
+                    <p class="caption">Flood at Port-Marly - Alfred Sisley</p>
+                </div>
+                <div>
+                    <img class="fade-in" src="images/morisotcradle.jpg" alt="The Cradle">
+                    <p class="caption">The Cradle - Berthe Morisot</p>
+                </div>
+                <div>
+                    <img class="fade-in" src="images/sisleysnow.jpg" alt="Snow at Louveciennes">
+                    <p class="caption">Snow at Louveciennes - Alfred Sisley</p>
+                </div>
+                <div>
+                    <img class="fade-in" src="images/cailrain.avif" alt="Paris Street, Rainy Day">
+                    <p class="caption">Paris Street, Rainy Day - Gustave Caillebotte</p>
+                </div>
+                <div>
+                    <img class="fade-in" src="images/sorollaseashore.jpg" alt="Strolling along the Seashore">
+                    <p class="caption">Strolling along the Seashore - Joaquín Sorolla</p>
+                </div>
+                <div>
+                    <img class="fade-in" src="images/monetfootbridge.jpg" alt="The Japanese Bridge">
+                    <p class="caption">The Japanese Bridge - Claude Monet</p>
+                </div>
+            </div>
+        </main>
+
+        <aside>
+            <h2>Uncover the Journey: Explore the Timeline of Impressionism</h2>
+            <p>Journey through the timeline of Impressionism, where you'll discover the pivotal moments, influential artists, and iconic masterpieces that defined this groundbreaking movement in art. See how it transformed the way we view light, color, and everyday life. Click the link below to explore the full timeline and uncover how each chapter of this revolutionary movement unfolded.</p>
+        </aside>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="timeline.html">Timeline</a></li>
+                    <li><a href="https://www.google.com/search?q=Impressionist+paintings&sca_esv=0baf5c9e671f57b4&rlz=1C5CHFA_enUS893US893&udm=2&biw=827&bih=713&sxsrf=ADLYWIJK34Du-Z6nqBDk1xV6mJiYAMl9xg%3A1733781762590&ei=AmlXZ_rQI-S9ptQPrp3muAw&ved=0ahUKEwj62c6w2JuKAxXknokEHa6OGccQ4dUDCBA&uact=5&oq=Impressionist+paintings&gs_lp=EgNpbWciF0ltcHJlc3Npb25pc3QgcGFpbnRpbmdzMgQQIxgnMgUQABiABDIKEAAYgAQYQxiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIvSNQzgFYtwZwAXgAkAEAmAFKoAH_AaoBATS4AQPIAQD4AQGYAgWgApMCwgINEAAYgAQYsQMYQxiKBcICBhAAGAcYHsICBxAAGIAEGAqYAwCIBgGSBwE1oAfpHg&sclient=img" target="_blank">Impressionist Paintings Search</a></li>
+                </ul>
+            </nav>
+            <p>&copy;2024 Nadia Nonou</p>
+        </footer>
+    </div>
+<audio autoplay loop>
+  <source src="audio/ClairdeLunedebussy.mp3" type="audio/mpeg">
+</audio>
+    <script>
+        const images = document.querySelectorAll('.fade-in');
+
+        const handleScroll = () => {
+            images.forEach(image => {
+                const rect = image.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                    image.classList.add('visible');
+                }
+            });
+        };
+
+        document.addEventListener('scroll', handleScroll);
+        document.addEventListener('DOMContentLoaded', handleScroll);
+    </script>
+</body>
+</html>

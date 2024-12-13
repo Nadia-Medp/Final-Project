@@ -1,0 +1,114 @@
+body {
+    background-color: #F4D2B0; /* Soft, muted peachy beige */
+    font-family: Georgia, serif;
+    margin: 10px;
+    padding: 0px;
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+    padding-bottom: 40px; /* Space at the bottom to prevent content from being cut off by footer */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pushes footer to the bottom */
+}
+
+#now-playing {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #E2B28A;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    text-align: left;
+    padding: 40px 10px;
+}
+
+h1 {
+    margin: 0;
+    color: #5A3E36;
+}
+
+.timeline-container {
+    margin: 20px auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+.timeline {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.timeline-item {
+    background-color: #F1C1A3; /* Soft peach color */
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid #E2B28A; /* Matching darker peach border */
+    cursor: pointer;
+    width: 150px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.timeline-item:hover {
+    transform: scale(1.1);
+    background-color: #E2B28A; /* Darker peach hover */
+}
+
+.timeline-item span {
+    font-size: 0.85em;
+    color: #F0E4D7; /* Very light beige for the span text */
+    display: block;
+    margin-top: 5px;
+}
+
+.event-description {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #F0D6B7; /* Light peachy background for description */
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#event-content {
+    color: #5A3E36;
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Footer changes: Now stays at the bottom and centered */
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    position: fixed; /* Keeps footer fixed at the bottom */
+    bottom: 0;
+    left: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    background-color: #E2B28A; /* Soft peachy beige */
+    padding: 6px;
+    width: 300px;
+    text-align: center;
+    border: solid 1px; /* Darker peach border */
+}
+
+footer p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+}
+
+

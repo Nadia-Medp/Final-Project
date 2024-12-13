@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressionism Timeline</title>
+    <link rel="stylesheet" href="styles3.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+	<div id="now-playing">
+    Now Playing: <span>Erik Satie - Gymnopédie No.3</span>
+  </div>
+    <div id="wrapper">
+        <header>
+            <h1>Timeline of Impressionist Paintings</h1>
+        </header>
+        <main>
+            <div class="timeline-container">
+        <ul class="timeline">
+    <li class="timeline-item" onclick="showEvent('impression-sunrise')">
+        Impression, Sunrise<br><span>Claude Monet (1872)</span>
+    </li>
+    <li class="timeline-item" onclick="showEvent('the-cradle')">
+        The Cradle<br><span>Berthe Morisot (1872)</span>
+    </li>
+    <li class="timeline-item" onclick="showEvent('snow-louveciennes')">
+        Snow at Louveciennes<br><span>Alfred Sisley (1874)</span>
+    </li>
+    <li class="timeline-item" onclick="showEvent('moulin-galette')">
+        Dance at Le Moulin de la Galette<br><span>Pierre-Auguste Renoir (1876)</span>
+    </li>
+    <li class="timeline-item" onclick="showEvent('dance-class')">
+        The Dance Class<br><span>Edgar Degas (1874-1876)</span>
+    </li>
+    <li class="timeline-item" onclick="showEvent('rainy-day')">
+        Paris Street, Rainy Day<br><span>Gustave Caillebotte (1877)</span>
+    </li>
+    <li class="timeline-item" onclick="showEvent('port-marly')">
+        Flood at Port-Marly<br><span>Alfred Sisley (1876-1879)</span>
+    </li>
+    <li class="timeline-item" onclick="showEvent('montmartre-night')">
+        The Boulevard Montmartre at Night<br><span>Camille Pissarro (1897)</span>
+    </li>
+    <li class="timeline-item" onclick="showEvent('water-lilies')">
+        Water Lilies<br><span>Claude Monet (1897-1899)</span>
+    </li>
+    <li class="timeline-item" onclick="showEvent('mother-sewing')">
+        Young Mother Sewing<br><span>Mary Cassatt (1900)</span>
+    </li>
+    <li class="timeline-item" onclick="showEvent('japanese-bridge')">
+        The Japanese Bridge<br><span>Claude Monet (1899-1900)</span>
+    </li>
+    <li class="timeline-item" onclick="showEvent('strolling-seashore')">
+        Strolling along the Seashore<br><span>Joaquín Sorolla (1909)</span>
+    </li>
+</ul>
+
+                <div class="event-description" id="description">
+                    <p id="event-content">Click on a timeline item to see more details.</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="timeline.html">Timeline</a></li>
+                    <li><a href="https://www.google.com/search?q=Impressionist+paintings&sca_esv=0baf5c9e671f57b4&rlz=1C5CHFA_enUS893US893&udm=2&biw=827&bih=713&sxsrf=ADLYWIJK34Du-Z6nqBDk1xV6mJiYAMl9xg%3A1733781762590&ei=AmlXZ_rQI-S9ptQPrp3muAw&ved=0ahUKEwj62c6w2JuKAxXknokEHa6OGccQ4dUDCBA&uact=5&oq=Impressionist+paintings&gs_lp=EgNpbWciF0ltcHJlc3Npb25pc3QgcGFpbnRpbmdzMgQQIxgnMgUQABiABDIKEAAYgAQYQxiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIvSNQzgFYtwZwAXgAkAEAmAFKoAH_AaoBATS4AQPIAQD4AQGYAgWgApMCwgINEAAYgAQYsQMYQxiKBcICBhAAGAcYHsICBxAAGIAEGAqYAwCIBgGSBwE1oAfpHg&sclient=img" target="_blank">Impressionist Paintings Search</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2024 Nadia Nonou</p>
+        </footer>
+        <audio autoplay loop>
+  <source src="audio/ErikSatieNo3.mp3" type="audio/mpeg">
+</audio>
+    </div>
+</body>
+</html>
